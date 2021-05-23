@@ -1,0 +1,13 @@
+To build the builder, please follow the following steps:
+
+ - Install docker
+ - Open the command prompt
+ - Go to this folder
+ - Run the following command
+        docker build ./ -t portal
+ - Run the following command to start the docker image
+		docker run -p 4200:4200 -v C:\Private\Internet-Shield\portal:/portal  -it portal
+ - To run the angular project. Run the following commands
+		npm install
+		ng serve
+

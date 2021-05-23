@@ -1,0 +1,14 @@
+version: '3.2'
+services:
+  portal:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+    - type: bind
+      source: ../
+      target: /portal
+    ports:
+    - 1400:1400
+    environment:
+    - DEPLOY_ENV=dev
